@@ -1,0 +1,2685 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.txtCon {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  /* border: 3px solid green; */
+  flex-direction: column;
+  padding-top: 200px;
+}
+
+.logo {
+  height: 100px;
+  padding-right: 21%;
+}
+
+.txt {
+  color: #ffd;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  padding-left: 25%;
+}
+
+/* login IN */
+
+.logIN {
+  width: 50%;
+  height: 100%;
+  /* border: 3px solid red; */
+}
+
+.loginBox {
+  background-color: #fff;
+  padding: 14px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  width: 395px;
+  height: 350px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  margin-top: 20%;
+  margin-left: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.emailInput {
+  /* margin-top: 20px; */
+  font-size: 17px;
+  padding: 14px 16px;
+  width: 350px;
+  height: 52px;
+  line-height: 16px;
+  border: 1px solid #ccd0d5;
+  outline: none;
+  border-radius: 7px;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+.emailInput:active {
+  border: 1px solid #1877f2;
+}
+
+.emailInput::placeholder {
+  color: #9e949c;
+}
+
+.passwordInput {
+  margin-top: 20px;
+  font-size: 17px;
+  padding: 14px 16px;
+  width: 350px;
+  height: 52px;
+  line-height: 16px;
+  border: 1px solid #ccd0d5;
+  outline: none;
+  border-radius: 7px;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+.passwordInput:active {
+  border: 1px solid #1877f2;
+}
+
+.passwordInput::placeholder {
+  color: #9e949c;
+}
+
+.loginBtn {
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 332px;
+  margin: 20px;
+  color: #ffffff;
+  width: 360px;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  transition: all 0.5s;
+}
+
+.loginBtn:hover {
+  background-color: #166fe5;
+  transition: all 0.5s;
+}
+
+.forgetBtn {
+  color: #1877f2;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  direction: ltr;
+  line-height: 1.34;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  transition: all 0.5s;
+}
+
+.forgetBtn:hover {
+  transition: all 0.5s;
+  text-decoration: underline;
+}
+
+.line {
+  width: 360px;
+  height: 2px;
+  background-color: #dadde1;
+  margin-top: 20px;
+}
+
+.signUpBtn {
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+  background-color: #42b72a;
+  color: #ffff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cover {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 100;
+  transition: all 0.5s;
+  visibility: hidden;
+}
+
+.signUpBox {
+  width: 432px;
+  height: 500px;
+  background-color: white;
+  left: 540px;
+  top: 140px;
+  border-radius: 10px;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  position: absolute;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  z-index: 1000000000;
+  display: none;
+}
+
+.signUpBox:hover {
+  cursor: pointer;
+}
+
+.heading {
+  margin-top: 13px;
+  margin-left: 16px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+}
+
+.subHeading {
+  margin-top: 5px;
+  margin-left: 16px;
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+}
+
+.subHeadings {
+  margin-top: 15px;
+  margin-left: 18px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+}
+
+.subHeadings__gender {
+  margin-top: 15px;
+  margin-left: 18px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+}
+
+.icon_cross {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.signupLIne {
+  width: 100%;
+  height: 2px;
+  background-color: #dadde1;
+  margin-top: 20px;
+}
+
+.inputBox {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.firstName {
+  color: #9e949c;
+  background-color: rgba(218, 221, 225, 0.4);
+  width: 180px;
+  height: 16px;
+  padding: 18px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #dadde1;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  margin-left: 20px;
+}
+
+.firstName::placeholder {
+  color: #9e949c;
+  font-size: 15px;
+}
+
+.SurName {
+  color: #9e949c;
+  background-color: rgba(218, 221, 225, 0.4);
+  width: 180px;
+  height: 16px;
+  padding: 18px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #dadde1;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  margin-left: 15px;
+}
+
+.SurName::placeholder {
+  color: #9e949c;
+  font-size: 15px;
+}
+
+.email {
+  margin-top: 10px;
+  color: #9e949c;
+  background-color: rgba(218, 221, 225, 0.4);
+  width: 89%;
+  height: 16px;
+  padding: 18px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #dadde1;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  margin-left: 15px;
+}
+
+.email::placeholder {
+  color: #9e949c;
+  font-size: 15px;
+}
+
+.passworrd {
+  margin-top: 10px;
+  color: #9e949c;
+  background-color: rgba(218, 221, 225, 0.4);
+  width: 89%;
+  height: 16px;
+  padding: 18px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #dadde1;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  margin-left: 15px;
+}
+
+.passworrd::placeholder {
+  color: #9e949c;
+  font-size: 15px;
+}
+
+.personalData {
+  margin-top: 5px;
+  margin-left: -5px;
+}
+
+.ageSelector {
+  border-radius: 4px;
+  border: 1px solid #dadde1;
+  color: #1c1e21;
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  height: 36px;
+  line-height: 20px;
+  margin-left: 20px;
+  width: 110px;
+}
+
+.monthSeector {
+  border-radius: 4px;
+  border: 1px solid #dadde1;
+  color: #1c1e21;
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  height: 36px;
+  line-height: 20px;
+  margin-left: 20px;
+  width: 110px;
+}
+
+.yearSelector {
+  border-radius: 4px;
+  border: 1px solid #dadde1;
+  color: #1c1e21;
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  height: 36px;
+  line-height: 20px;
+  margin-left: 20px;
+  width: 110px;
+}
+
+.hid {
+  width: 0%;
+  height: 0%;
+  position: absolute;
+}
+
+.gender {
+  border: 1px solid #ccd0d5;
+  padding: 14px;
+  border-radius: 5px;
+  width: 150px;
+  height: 45px;
+  display: block;
+}
+
+.genderData {
+  margin-top: 16px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.signUP__button {
+  background: none;
+  background-color: #00a400;
+  border: none;
+  border-radius: 6px;
+  box-shadow: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  height: 36px;
+  width: 190px;
+  overflow: hidden;
+  /* padding: 0 32px; */
+  text-shadow: none;
+  margin-left: 127px;
+  margin-top: 20px;
+}
+
+/*importing fonts >>>*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/*making roots for variables >>>*/
+:root {
+  --body-font: "Roboto", sans-serif;
+  --transition-normal: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/*universal or basic styling >>> */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #18191a;
+  overflow: hidden;
+  font-family: var(--body-font);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+/*////////////////////////////////////////
+//////////// header >>>*/
+
+.header {
+  /*header-basics >>>*/
+  width: 100vw;
+  height: 60px;
+  max-height: 80px;
+  background-color: #242526;
+}
+
+/***removing header on the viewport of the 600px**/
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*** header search section >>> ***/
+
+.header-search-container {
+  /*header search container styles >>>*/
+  width: 300px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-search-img {
+  /*header search container img styles >>>*/
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin: 0 10px 0 10px;
+}
+
+.header-search-icon {
+  /*header search container icon styling >>>*/
+  font-size: 16px !important;
+  color: #a7b1ac;
+  position: absolute;
+  margin-left: 75px;
+}
+
+.header-hidden-icon {
+  font-size: 30px !important;
+  color: #a7b1ac;
+  position: absolute;
+  display: none;
+  visibility: hidden;
+}
+
+.header-search-searchBox {
+  /*header search container input or search box styling >>>*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3b3c;
+  height: 43px;
+  width: 230px;
+  outline: none;
+  border: none;
+  padding: 20px;
+  padding-left: 40px;
+  color: #e4e6eb;
+  font-size: 15px;
+  border-radius: 25px;
+  margin-right: 8px;
+}
+
+.header-search-searchBox::placeholder {
+  color: #a7b1ac;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+/*** header nav section***/
+
+.header-nav-container {
+  /*header nav main container styling >>>*/
+  width: 579px;
+  margin-right: 103px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav-icon-box {
+  /*header nav container styling >>>*/
+  border-radius: 10px;
+  width: 17.5%;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  transition: var(--transition-normal);
+  position: relative;
+}
+
+.activeBox:hover {
+  /*header nav container with active line  >>>*/
+  background: transparent !important;
+}
+.activeBox::before {
+  content: " ";
+  background-color: #2374e1;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  align-self: flex-end;
+  justify-self: flex-end;
+  top: 100%;
+}
+
+.header-nav-icon-box-icon {
+  /*header nav container items styling >>>*/
+  align-self: center;
+  justify-self: center;
+  fill: #a7b1ac;
+}
+
+.header-nav-icon-box:hover {
+  /*header hover effects >>>*/
+  cursor: pointer;
+  background-color: rgba(77, 79, 80, 0.5);
+  transition: var(
+    --transition-normal
+  ); /*also adding transition for animationa effects <<<*/
+}
+
+/*header nav section additional classeess >>>*/
+.activeIcon {
+  fill: #2374e1; /*changin color of active icon*/
+}
+
+/*** header nav section End***/
+
+/*** header user section***/
+
+.header-user-container {
+  /*header main container >>>*/
+  width: 200px;
+  margin-right: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-user-containerBox {
+  /*header container styles >>>*/
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(58, 59, 60);
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin-right: 3px;
+}
+
+.header-user-containerBox-icon {
+  -webkit-filter: invert(89%) sepia(6%) hue-rotate(185deg);
+}
+
+.header-user-containerBoxImg {
+  /*header user sec user img styles >>>*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.bd {
+  filter: invert(40%) sepia(52%) saturate(200%) saturate(200%) saturate(200%)
+    saturate(189%) hue-rotate(191deg) brightness(103%) contrast(102%);
+  margin-left: -10%;
+}
+
+/*////////////////////////////////////////
+//////////// header end >>>*/
+
+/*////////////////////////////////////////
+////////////main container start>>>*/
+
+/*mean the container which conatins the sidebar , post sec and active bar*/
+
+/*////////////////////////////////////////
+////////////main container start>>>*/
+.main {
+  width: 100vw;
+  height: auto;
+  max-height: 900px;
+  display: flex;
+}
+
+/*////////////////////////////////////////
+////////////sidebar container start>>>*/
+.sidebar {
+  /*sidebar main container styles*/
+  width: 355px;
+  height: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: auto;
+  scrollbar-color: transparent transparent;
+}
+
+.sidebar::-webkit-scrollbar {
+  /*custom scroller bar defining the width of the scrollar*/
+  width: 7px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  /*defing the scrolling track styles*/
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  /*defing the styles of the thumb >>> mean which object is moving*/
+  background-color: grey;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/*making responsive*/
+
+.sidebar-main {
+  /*sidebar main container in which all the childerns are placed*/
+  width: 100%;
+  height: auto;
+  margin: 0%;
+  padding: 0%;
+}
+
+.sidebar-flex {
+  /*the main flex of the whole container*/
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.sidebar-flexItem {
+  /*the styles for indivitually items*/
+  width: 100%;
+  height: 52px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: var(--transition-normal);
+}
+
+.sidebar-flexItem:hover {
+  /*defing the hover effects of the flexItem*/
+  cursor: pointer;
+  background-color: rgba(77, 79, 80, 0.5);
+  transition: var(--transition-normal);
+}
+
+.sidebar-flexItemImg {
+  /*the style of the img in the flex item*/
+  width: 36px;
+  height: 36px;
+  margin-left: 13px;
+}
+
+.sidebar-flexItemLabel {
+  /*now styles for the text of flex item >>> mean ShayanMAhmood,Groups,Events Etc*/
+  font-size: 14px;
+  color: #e4e6eb;
+  font-weight: bolder;
+  margin-left: 4px;
+  margin-left: 10px;
+}
+
+.hidden {
+  /*this the class which we use in js for opening or closing the dropDown Items*/
+  visibility: hidden;
+  display: none;
+}
+
+.sidebar-dropdownCircle {
+  /*thr circle of the dropDown items >>> mean circle behind the drop or up Icon*/
+  width: 31px;
+  height: 31px;
+  background-color: #3a3c3b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 13px;
+}
+
+.sidebar-dropdownIcon {
+  /*this is styles for the actually icon on the circles in dropdown or dropup items >>> mean seemore or seeless items*/
+  fill: #e4e6eb;
+  width: 17px;
+  height: 17px;
+}
+
+.sidebar-flexLoader {
+  /*the loader when we click on the dropDown item*/
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-flexDivider {
+  /*the divider styles that divide the sidebar into your shortscuts and others items >>> mean the line over the yourshortcuts div*/
+  color: #b0b3b8;
+  background-color: rgba(128, 128, 128, 0.4);
+  height: 0.1rem;
+  width: 93%;
+  margin-left: 13px;
+}
+
+.sidebar-shortCuts {
+  /*styles for yourShortsCuts Main Div*/
+  width: 100%;
+  height: auto;
+  margin: 0%;
+  padding: 0%;
+}
+
+.sidebar-shortCutsHeading {
+  /*styles for the heading of the yourShortCuts >>> mean YourShortsCuts Word(heading)*/
+  font-size: 17px;
+  font-weight: 600;
+  color: #b0b3b8;
+  margin-top: 16px;
+  margin-left: 13px;
+}
+
+.sidebar-shortCutsFlex {
+  /*flex for the yourShortCuts Divs*/
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 185px;
+}
+
+.sidebar-shortCutsFlexItem {
+  /*the styles for indivitually shortcuts items*/
+  width: 100%;
+  height: 52px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: var(--transition-normal);
+}
+
+.sidebar-shortCutsFlexItem:hover {
+  /*the hover effect for the yourShortCust Items*/
+  cursor: pointer;
+  background-color: rgba(77, 79, 80, 0.5);
+  transition: var(--transition-normal);
+}
+
+.sidebar-shortCutsFlexItemImg {
+  /*the styles for the img in the left side of the item*/
+  width: 31px;
+  height: 31px;
+  margin-left: 13px;
+  border-radius: 7px;
+}
+
+.sidebar-shortCutsFlexLabel {
+  /*te label on the right side of the item*/
+  font-size: 14px;
+  color: #e4e6eb;
+  font-weight: bolder;
+  margin-left: 4px;
+  margin-left: 10px;
+}
+
+/*////////////////////////////////////////
+////////////sidebar container End>>>*/
+
+/*////////////////////////////////////////
+////////////activebar container start>>>*/
+.activebar {
+  /*the main container  of the active bar >>> mean the rigt bar on the postSec*/
+  width: 355px;
+  height: auto;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.activebar::-webkit-scrollbar {
+  /*custom scroller bar defining the width of the scrollar*/
+  width: 7px;
+}
+
+.activebar::-webkit-scrollbar-track {
+  /*defing the scrolling track styles*/
+  background: transparent;
+}
+
+.activebar::-webkit-scrollbar-thumb {
+  /*defing the styles of the thumb >>> mean which object is moving*/
+  background-color: grey;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/*maing resposniev*/
+
+.activebar-header {
+  /*the styles of the activebar header >>> meaon contact txt or 3 icons*/
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  margin-top: 10px;
+}
+
+.sidebar-heading {
+  /*the styles of the heaing sidebar heading do not be confuess i by mistake write it sidebar heading but it si the active bar heading >>> contact*/
+  color: #b0b3b8;
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.activebar-headerInnerflex {
+  /*the seprate flex for the icons */
+  display: flex;
+  justify-content: space-between;
+}
+
+.activebar-headerCircle {
+  /*the circles behid the icons*/
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  transition: var(--transition-normal);
+}
+
+.activebar-headerCircle:hover {
+  /*the circle appera when we hover*/
+  cursor: pointer;
+  background-color: rgba(77, 79, 80, 0.5);
+  transition: var(--transition-normal);
+}
+.activebar-headerIcon {
+  /*icons defing color*/
+  fill: #b0b3b8;
+}
+
+.activebar-flex {
+  /*now flex for the active bar items*/
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.activebar-flexItem {
+  /*the styles for the indivitually items*/
+  width: 100%;
+  height: 52px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: var(--transition-normal);
+}
+
+.activebar-flexItem:hover {
+  /*definig hover effect*/
+  cursor: pointer;
+  background-color: rgba(77, 79, 80, 0.5);
+  transition: var(--transition-normal);
+}
+
+.activebar-flexItemImg {
+  /*the img in the activebar item, on the left side*/
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-left: 13px;
+}
+
+.activebar-flexItemLabel {
+  /*the label on the right side*/
+  font-size: 14px;
+  color: #e4e6eb;
+  font-weight: bolder;
+  margin-left: 4px;
+  margin-left: 10px;
+}
+/*////////////////////////////////////////
+////////////activebar container End>>>*/
+
+.post-conatiner {
+  /*the main container for post items >>> mean story,mind and main post section*/
+  width: 825px;
+  height: 100%;
+  align-items: center;
+}
+
+.post-conatiner::-webkit-scrollbar {
+  /*custom scroller bar defining the width of the scrollar*/
+  width: 7px;
+}
+
+.post-conatiner::-webkit-scrollbar-track {
+  /*defing the scrolling track styles*/
+  background: transparent;
+}
+
+.post-conatiner::-webkit-scrollbar-thumb {
+  /*defing the styles of the thumb >>> mean which object is moving*/
+  background-color: grey;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.post-container-flex {
+  /*the main flex for the post*/
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: scroll !important;
+}
+
+.post-container-flex::-webkit-scrollbar {
+  /*custom scroller bar defining the width of the scrollar we set it at 0 because we dont want to see it*/
+  width: 0px;
+}
+
+.post-container-flex::-webkit-scrollbar-track {
+  /*defing the scrolling track styles*/
+  background: transparent;
+}
+
+.post-container-flex::-webkit-scrollbar-thumb {
+  /*defing the styles of the thumb >>> mean which object is moving*/
+  background-color: grey;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/*////////////////////////////////////////
+////////////Story container Start>>>*/
+
+.postStory-container {
+  /*main story conatiner styles*/
+  border-radius: max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 8px;
+  width: 73%;
+  height: 290px;
+  background-color: #242526;
+  margin-top: 20px;
+}
+
+.postStory-containerHeader {
+  /*the header of the story container*/
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.postStory-containerHeaderItem {
+  /*the styles for header item mean >>> story,reels Etc */
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: var(--transition-normal);
+  position: relative;
+}
+
+.postStory-containerHeaderItem:hover {
+  /*the hover effect on the itesm mean the backgroud on hovering the reels TXt Etc*/
+  cursor: pointer;
+  background-color: rgba(77, 79, 80, 0.5);
+  transition: var(--transition-normal);
+}
+
+.postStory-containerHeaderTxt {
+  /*now the styles for the txt mean >>> story,Reels Etc*/
+  color: #b0b3b8;
+  font-size: 15px;
+  font-weight: 600;
+}
+.postStory-activeItem:hover {
+  /*removing hover effects for r the active item*/
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.postStory-activeTxt {
+  /*styles for the active item TXx >>> mean (Story)*/
+  color: #2e89ff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.postStory-activeLine {
+  /*blue line under the story Txt*/
+  background-color: #2e89ff;
+  height: 3px;
+  top: 45px;
+  width: 170px;
+  margin-top: 10px;
+  position: absolute;
+}
+.postStory-main {
+  /*now the main part styles of the story conatiner >> mean stories*/
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 80%;
+  align-items: center;
+  flex-shrink: 0;
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: scroll !important;
+  scroll-behavior: smooth !important;
+}
+
+.postStory-main::-webkit-scrollbar {
+  /*defing the styles of the thumb >>> mean which object is moving here we will give it no height because we donot want large scroller*/
+  width: 7px;
+  height: 0px;
+}
+
+.postStory-main::-webkit-scrollbar-track {
+  /*defing the scrolling track styles*/
+  background: transparent;
+}
+
+.postStory-main::-webkit-scrollbar-thumb {
+  /*custom scroller bar defining the width of the scrollar*/
+  background-color: grey;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.postStory-mainStory {
+  /*the user story styles*/
+  min-width: 112px;
+  height: 200px;
+  border-radius: 8px;
+  margin-left: 20px;
+  position: relative;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.postStory-mainStoryImgsection {
+  /*the user story sec img sec styles*/
+  width: 100%;
+  height: 130px;
+  background: #2374e1;
+}
+
+.postStory-mainStoryImg {
+  /*user story img styles*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.postStory-mainStoryTxtSection {
+  /*now defing styles for the use story Txt Section*/
+  width: 100%;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.postStory-mainStoryIconCircle {
+  /*the user story container has a + icon so the circle behind the +*/
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: hsl(214, 100%, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 37px;
+  top: 110px;
+  outline: 6px solid #282827;
+}
+
+.postStory-mainStoryIcon {
+  /*styles for the + icon*/
+  fill: #fff;
+}
+
+.postStory-mainStoryTxt {
+  /*txt styles (user-story) >>> mean Create story Txt*/
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.postStory-mainNormal {
+  /*styles for normal stroy >>> mean not user story*/
+  min-width: 112px;
+  height: 200px;
+  background-image: url("../img/user-story/Yellow and White Simple Clean Positive Motivational Instagram Story.png");
+  background-size: cover;
+  border-radius: 8px;
+  margin-left: 10px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.postStory-bgO {
+  /*backgound for no one story*/
+  background-image: url("../img/user-story/450w-PBd3NRQ3KwQ.webp") !important;
+}
+
+.postStory-bgT {
+  /*backgound for no two story*/
+  background-image: url("../img/user-story/Pink Abstract Shape Reminder Your Story .png") !important;
+}
+
+.postStory-bgTh {
+  /*backgound for no three story*/
+  background-image: url("../img/user-story/Striped Orange & Brown Meeting Joke Animal Instagram Story Meme.png") !important;
+}
+
+.postStory-mainNormalCircle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  outline: 4px solid hsl(214, 100%, 50%);
+  margin-left: 14px;
+}
+
+.postStory-mainNormalCircleImg {
+  /*the circle img on teh top of the stories*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.postStory-mainNormalTxtCon {
+  /*seprate conatiner for txt*/
+  text-align: center;
+}
+
+.postStory-mainNormalTxt {
+  /*style for txt (normal story) >>> mean name ofthe user on the bottom*/
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 70px;
+}
+
+.postStory-iconBox {
+  /*the next icon circle styles */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #3a3b3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+}
+
+.postStory-iconBoxLeft {
+  /*the left arrow circle styles appers when we click on the next arrow icon*/
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #3a3b3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 30px;
+}
+
+.postStory-icon {
+  /*defing colrs of the next icon*/
+  color: #b0b3b8;
+  width: 24px;
+  height: 24px;
+}
+
+.postStory-iconLeft {
+  /**defing colrs of the iconLeft icon*/
+  color: #b0b3b8;
+  width: 24px;
+  height: 24px;
+  transform: rotate(-180deg);
+}
+
+/*////////////////////////////////////////
+////////////Story container End>>>*/
+
+/*////////////////////////////////////////
+////////////Mind container Start>>>*/
+.mind-container {
+  /*the styles for the main mind container*/
+  border-radius: max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 8px;
+  width: 73%;
+  min-height: 128px;
+  margin-top: 13px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #242526;
+}
+
+.mind-containerSearchbox {
+  /*the search section styles of the mind section*/
+  width: 100%;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.mind-containerSearchImg {
+  /*the img on the left side of the search section*/
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 12px;
+}
+
+.mind-containerSearch {
+  /*the actually search box styles*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3b3c;
+  height: 24px;
+  width: 500px;
+  outline: none;
+  border: none;
+  padding: 20px;
+  color: #e4e6eb;
+  font-size: 15px;
+  border-radius: 25px;
+  margin-left: 7px;
+  cursor: no-drop;
+}
+
+.mind-containerSearch:hover {
+  /*defing hover effects*/
+  cursor: no-drop;
+}
+
+.mind-containerSearch::placeholder {
+  /*defining styles for placeholder*/
+  color: #a7b1ac;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.mind-containerChoosebox {
+  /*the second box of the mind conatiner styles*/
+  width: 100%;
+  height: 62px;
+}
+
+.mind-containerLine {
+  /*divider line between search and choose box*/
+  color: #b0b3b8;
+  background-color: rgba(128, 128, 128, 0.4);
+  height: 0.1rem;
+  width: 90%;
+  margin-right: 20px;
+}
+
+.mind-containerChoosebox {
+  /*styles for choose box*/
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+.mind-containerChoose {
+  /*the indivitual items of the choose container*/
+  width: 180px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: var(--transition-normal);
+}
+.mind-containerChoose:hover {
+  /*hover efftes is defined*/
+  cursor: pointer;
+  background-color: rgba(77, 79, 80, 0.5);
+  transition: var(--transition-normal);
+}
+
+.mind-containerChooseIcon {
+  /*the icon in the choose item*/
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+}
+
+.mind-containerChooseTxt {
+  /*the text in the choose conatiner >>> mean live,Photo/video Etc*/
+  color: #b0b3b8;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/*////////////////////////////////////////
+////////////Mind container End>>>*/
+
+/*////////////////////////////////////////
+////////////real main post container Start>>>*/
+
+.preview {
+  width: 85%;
+  border: 1px solid grey;
+  /* position: absolute; */
+  /* padding-bottom: 44px; */
+  margin-left: 30px;
+  height: 148px;
+  margin-top: -77px;
+}
+
+.postCONTAINE {
+  width: 101%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 239px;
+  margin-bottom: 10%;
+}
+
+.postMain-container {
+  /*the main post conatiner styles*/
+  display: flex;
+  flex-direction: column;
+  width: 72%;
+  min-height: 645px;
+  margin-top: 20px;
+  border-radius: max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 8px;
+  background-color: #242526;
+}
+
+.postMain-containerIMG {
+  display: flex;
+  flex-direction: column;
+  width: 72%;
+  min-height: 724px;
+  margin-top: 20px;
+  border-radius: max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 8px;
+  background-color: #242526;
+}
+
+.postMain-containerTxt {
+  display: flex;
+  flex-direction: column;
+  width: 72%;
+  min-height: 145px;
+  margin-top: 20px;
+  border-radius: max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 8px;
+  background-color: #242526;
+}
+
+.postContnt {
+  color: #fff;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.specoal-post {
+  /*styles for the special post >>> smashcode*/
+  color: #fff;
+  box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #0ba9ca, 0 0 30px #0ba9ca,
+    0 0 40px #0ba9ca, 0 0 50px #0ba9ca;
+  -webkit-animation: blink 0.7s infinite alternate;
+  animation: blink 0.7s infinite alternate;
+}
+
+@keyframes blink {
+  /*animation of the special post is defined*/
+  100% {
+    box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ba9ca,
+      0 0 70px #0ba9ca, 0 0 80px #0ba9ca;
+  }
+}
+
+.postMain-containerHeader {
+  /*header styles of the post*/
+  width: 100%;
+  min-height: 63px;
+  display: flex;
+  align-items: center;
+}
+
+.postMain-containerHeaderImg {
+  /*img styles in the left of the header of the cotainer*/
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 12px;
+}
+.postMain-containerHeaderInnerflex {
+  /*the seprate div for the both txt*/
+  margin-left: 12px;
+}
+
+.postMain-containerHeaderInnerflexTxt {
+  /*the styles of the txt in the header*/
+  color: #e4e6eb;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.postMain-containerMain {
+  /*the main conatiner of the maen >>> img container*/
+  width: 100%;
+  height: 495px;
+}
+
+.postMain-containerMainTXT {
+  width: 100%;
+  height: 100px;
+}
+
+.postMain-containerMainImg {
+  /*the styles for the imgs*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.postMain-containerfooter {
+  /*now styles for the footer of the post*/
+  width: 100%;
+  height: auto;
+}
+
+.postMain-containerfooterIMG {
+  width: 100%;
+  height: 12px;
+  margin-top: 78px;
+}
+
+.postMain-containerfooterReated {
+  /*mean styles for those div wihich is already reacted*/
+  width: 100%;
+  height: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.postMain-containerfooterReatedImg {
+  /*the like img styles*/
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+}
+.postMain-containerfooterReatedTxt {
+  /*the reated txt styles>>> mean likes*/
+  color: #b0b3b8;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.postMain-containerfooterReatedShares {
+  /*share txt styles*/
+  color: #b0b3b8;
+  font-size: 14px;
+  margin-left: 390px;
+}
+
+.postMain-containerfooterReact {
+  /*those conatiner styles which is react by su*/
+  width: 100%;
+  height: 38px;
+}
+
+.btn_show {
+  border: none;
+  width: 100px;
+  height: 24px;
+  color: #fff;
+  background: cornflowerblue;
+  position: absolute;
+  top: 70%;
+  left: 60%;
+}
+
+.postMain-containerfooterReactTXT {
+  width: 100%;
+  height: 51px;
+}
+.postMain-chooseBox {
+  /*choose box styles*/
+  border-top: 1px solid #80808066;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.postMain-chooseBoxChoose {
+  /*inditiual choose box styles*/
+  width: 180px;
+  height: 35px;
+  margin-top: 5px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-normal);
+}
+
+.postMain-chooseBoxChooseLIkes {
+  width: 180px;
+  height: 35px;
+  margin-top: 5px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-normal);
+}
+
+.postMain-chooseBoxChooseLIkes:hover {
+  /*hove effects on the choose item*/
+  cursor: pointer;
+  background-color: rgba(77, 79, 80, 0.5);
+  transition: var(--transition-normal);
+}
+
+.postMain-chooseBoxChoose:hover {
+  /*hove effects on the choose item*/
+  cursor: pointer;
+  background-color: rgba(77, 79, 80, 0.5);
+  transition: var(--transition-normal);
+}
+
+.postMain-chooseBoxChooseIcon {
+  /*icon style i the choose box*/
+  -webkit-filter: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg)
+    brightness(90%) contrast(96%);
+}
+
+.postMain-chooseBoxChooseTxt {
+  /*txt in the container*/
+  font-size: 14px;
+  color: #b0b3b8;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+/*////////////////////////////////////////
+////////////real main post container End>>>*/
+
+/*////////////////////////////////////////
+////////////post container End>>>*/
+
+/*////////////////////////////////////////
+////////////main container End>>>*/
+
+/*******resonsive sections*****/
+/*****because we have to make our faCEBOOK website as responsive as in the mobile so it is not possible without making separate part for mobile so styles for those separate parts .....*******/
+
+/**navbar or header for mobile*/
+
+.nav-responsive {
+  /****making navbar for the mobile and talblets***/
+  width: 100vw;
+  height: 60px;
+  background-color: #242526;
+  display: grid;
+  grid-template-rows: repeat(1, 100%);
+  grid-template-columns: 100%;
+  visibility: hidden;
+  display: none;
+}
+
+.nav-responsive--logo-con {
+  /**we separetly style the logo (mean upper logo and  icons) and second part is called nav responsive bottom **/
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 82% repeat(2, 8%);
+  margin-top: 7px;
+}
+
+.nav-responsive--logo-con--messenger-circle {
+  /**the circle behind the messenger icon in responsive navbar*/
+  background-color: #3a3b3c;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-left: 0rem;
+}
+
+.nav-responsive--logo-con--search-circle {
+  /******circle behind the search icon in responsive navbar************/
+  background-color: #3a3b3c;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.nav-responsive--logo-con--search-circle--icon {
+  /*****making search icon white in responsive navbar****/
+  fill: #fff;
+}
+
+.nav-responsive--logo-con--logo {
+  /*****the ehite facebook logo in responsive navbar****/
+  width: 160px;
+  height: 50px;
+}
+
+.nav-responsive--bottom {
+  /*****the styles for ( bottom mean down the logo part ) >>> icons part is defined*****/
+  width: 100vw;
+  height: 60px;
+  background-color: #242526;
+  display: grid;
+  grid-template-rows: repeat(1, 100%);
+  grid-template-columns: 100%;
+  visibility: hidden;
+  display: none;
+}
+
+.nav-responsive--bottom--icon-con {
+  /***defining grid for the botom part of the responsive navbar***/
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(6, 16.6%);
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.nav-responsive--bottom--icon-con--icon-box {
+  /****the main flex for te bottom responsive navbar icons***/
+  display: flex;
+  align-items: flex-start;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  border-top: #2374e1;
+  margin-right: 25px;
+}
+
+.nav-responsive--bottom--icon-con--icon-box--icon {
+  /******styles for bottom icons****/
+  height: 28px;
+  width: 28px;
+  fill: #b0b3b8;
+}
+
+.nav-responsive--bottom {
+  /*****the most main container in which all the bottom navbar is placed*******/
+  width: 100vw;
+  height: 60px;
+  background-color: #242526;
+  display: grid;
+  grid-template-rows: repeat(1, 100%);
+  grid-template-columns: 100%;
+  visibility: hidden;
+  display: none;
+}
+
+.nav-responsive--bottom--icon-con {
+  /**grid for bottom resonsive navbar is defined***/
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(6, 16.6%);
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.nav-responsive--bottom--icon-con--icon-box--icon {
+  height: 31px;
+  width: 31px;
+  fill: #b0b3b8;
+}
+
+/**mind section for tablet >>> for some resones the mind section is different in tablet and mobile view so i make separate seprate design for each***/
+.res-mind-container {
+  width: 100vw;
+  height: 125px;
+  background-color: #242526;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+  visibility: hidden;
+}
+
+.res-mind-containerSearch {
+  /***the search part of the mind section*****/
+  width: 764px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.res-mind-containerSearchImg {
+  /***the user img in the search part in mind section******/
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.res-mind-containerSearchBox {
+  /*****the actual searc input styles****/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3b3c;
+  height: 43px;
+  width: 650px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  padding-left: 25px;
+  color: #e4e6eb;
+  font-size: 20px;
+  border-radius: 25px;
+  margin-left: 5px;
+}
+
+.res-mind-containerSearchBox::placeholder {
+  /***placeholder for search input is defined***/
+  color: #a7b1ac;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+.res-mind-containerChoose {
+  width: 764px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.res-mind-containerChooseBox {
+  /*****the choos section fo the mind section for tablet ****/
+  width: 215px;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.res-mind-containerChooseBox:hover {
+  /****hover effects for choose box****/
+  cursor: pointer;
+  background-color: rgba(77, 79, 80, 0.5);
+  transition: var(--transition-normal);
+}
+.res-mind-containerChooseBoxTxt {
+  /***text inside the box***/
+  color: #b0b3b8;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/**now  mind section for mobile*/
+.res-mind-mb {
+  /*****mind section for mobile styles is defined********/
+  width: 100vw;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  background-color: #242526;
+  border-top: 1px solid grey;
+  display: none;
+}
+
+.res-mind-mbImg {
+  /****user img styles for mobile responsive mind section*****/
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.res-mind-mbSearch {
+  /****search part of the mobile mode mind section*****/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242526bd;
+  height: 43px;
+  width: 280px;
+  outline: none;
+  border: 2px solid grey;
+  padding: 10px;
+  padding-left: 25px;
+  color: #e4e6eb;
+  font-size: 20px;
+  border-radius: 25px;
+  margin-left: 5px;
+}
+
+.res-mind-mbSearch::placeholder {
+  font-size: 17px;
+  color: #fff;
+}
+.res-mind-mbSearchIcon {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+/**responsive story section**/
+.res-story {
+  /****for responsive story section styles is defined***/
+  border-radius: 8px;
+  width: 100%;
+  height: 400px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: #242526;
+  display: none;
+  visibility: hidden;
+}
+
+.res-story-header {
+  /******header part of the responsive story section***/
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  border: 1px solid green;
+}
+.res-story-headerItem {
+  /******the itesm in the header*****/
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: var(--transition-normal);
+  position: relative;
+}
+
+.res-story-headerItem:hover {
+  /*the hover effect on the itesm mean the backgroud on hovering the reels TXt Etc*/
+  cursor: pointer;
+  background-color: rgba(77, 79, 80, 0.5);
+  transition: var(--transition-normal);
+}
+.res-story-headerItemTxt {
+  /*****text inside the header items **/
+  color: #b0b3b8;
+  font-size: 22px;
+  font-weight: 600;
+}
+.res-active {
+  /***active responsive header item **/
+  color: #2e89ff;
+  font-size: 22px;
+  font-weight: 400;
+}
+.res-activeHover:hover {
+  /***we are not hovering on the active item***/
+  background-color: transparent;
+}
+.res-storyactiveLine {
+  /*****line over the active items in header of the responsive stroy section*******/
+  background-color: #2e89ff;
+  height: 3px;
+  top: 45px;
+  width: 90%;
+  margin-top: 10px;
+  position: absolute;
+}
+.res-storyMain {
+  /**the down section under the header of teh story section****/
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 25px;
+  margin-left: 20px;
+  overflow: scroll;
+}
+
+.res-storyMainCon {
+  /******main box of the story****/
+  display: flex;
+  align-items: center;
+  min-width: 180px;
+  height: 97%;
+  border-radius: 8px;
+  flex-direction: column;
+  background-color: #3a3b3c;
+  overflow: hidden;
+}
+.res-storyMainConImgsec {
+  /****img section of the author story box***/
+  width: 100%;
+  height: 76%;
+}
+.res-storyMainConImg {
+  /****staisfying that the img cover the entire box***/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.res-storyMainStoryTxtsecCircle {
+  /****the circle behind the plus _+ icons in user story section****/
+  left: 60px;
+  width: 43px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: hsl(214, 100%, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -23px;
+}
+
+.res-storyMainStoryTxtIcon {
+  /***the conatiner in which text is placed***/
+  fill: #fff;
+  width: 25px;
+  height: 25px;
+}
+.res-storyMainStoryTxtsec {
+  /***the styles for txt section***/
+  display: flex;
+}
+.res-storyMainStoryTxtsecTxt {
+  /***now the styls for the text**/
+  margin-top: 30px;
+  margin-right: 40px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bolder;
+}
+.res-storyNormal {
+  /***stylin story section for the normal users***/
+  display: flex;
+  align-items: center;
+  min-width: 180px;
+  height: 97%;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: #3a3b3c;
+  overflow: hidden;
+  margin-left: 10px;
+  background-image: url("../img/user-story/450w-PBd3NRQ3KwQ.webp");
+  background-size: cover;
+}
+.res-storyNormalImgcircle {
+  /***the circle img contaier**/
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #2374e1;
+  margin-top: 20px;
+  margin-right: 85px;
+}
+.res-storyNormalImg {
+  /***the circle user img ***/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.res-storyNormalTxt {
+  /****the name of the user styles***/
+  margin-top: 30px;
+  font-size: 21px;
+  font-weight: bolder;
+  margin-top: 190px;
+  color: #fff;
+}
+.res-bg-2 {
+  /****definig the background for the first user story****/
+  background-image: url("../img/user-story/Pink\ Abstract\ Shape\ Reminder\ Your\ Story\ .png");
+}
+.res-bg-3 {
+  /****definig the background for the second user story****/
+  background-image: url("../img/user-story/Striped\ Orange\ &\ Brown\ Meeting\ Joke\ Animal\ Instagram\ Story\ Meme.png");
+}
+.res-bg-4 {
+  /****definig the background for the third user story****/
+  background-image: url("../img/user-story/Yellow\ and\ White\ Simple\ Clean\ Positive\ Motivational\ Instagram\ Story.png");
+}
+/****responsove post for mobiel***/
+.main-res {
+  /****the main conatiner in which story and post is placed****/
+  overflow: scroll;
+  width: 100%;
+  height: auto;
+  display: none;
+  visibility: hidden;
+}
+
+.res-post {
+  /****styles for responsive post section***/
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  display: none;
+  visibility: hidden;
+}
+
+.res-postCon {
+  /***the main post conatiner****/
+  width: 100%;
+  height: 800px;
+  background-color: #242526;
+  margin-top: 20px;
+}
+.res-postConHeader {
+  /*the header of the post***/
+  width: 100%;
+  height: 85px;
+  display: flex;
+  align-items: center;
+}
+
+.res-postConHeaderImg {
+  /***the styles for user img in the header***/
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+.res-postConHeaderTxtCon {
+  /****the text conatiner on the right side of the user img***/
+  margin-left: 10px;
+}
+.res-postConHeaderTxt {
+  /**defing styles for text***/
+  font-size: 17px;
+  color: #e4e6eb;
+}
+
+.res-postConMain {
+  /**the section in which actuall post img is placed***/
+  width: 100%;
+  height: 630px;
+}
+
+.res-postConMainImg {
+  /*****the styles for the post img***/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.res-postConFooter {
+  /**now styles for the footer of the post**/
+  width: 100%;
+  height: 85px;
+}
+.res-postConFooterReacted {
+  /***styles for the the reacted reaction part*/
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.res-postConFooterReactedImg {
+  /**the img of the like 👍**/
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+.res-postConFooterReactedTxt {
+  /**the txt of the reacted part**/
+  font-size: 17px;
+  color: #b0b3b8;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+.res-postConFooterReact {
+  /**the reaction part for the user is defined**/
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.res-postCon-chooseBox {
+  /**styles for the reaction part choosebox**/
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #80808066;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.res-postCon-chooseBoxChoose {
+  /*******the styles for chhose box items(chooseboxChoose)***/
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-normal);
+  border-radius: 8px;
+}
+.res-postCon-chooseBoxChoose:hover {
+  /*hover efftes is defined*/
+  cursor: pointer;
+  background-color: rgba(77, 79, 80, 0.5);
+  transition: var(--transition-normal);
+}
+.res-postCon-chooseBoxChooseIcon {
+  /****icosn inside the chooseboxchoose mean >>>> 👍(like) 📃📝(commet)📎(share)****/
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+  -webkit-filter: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg)
+    brightness(90%) contrast(96%);
+}
+.res-postCon-chooseBoxChooseTxt {
+  /*****text inside the chooseboxChoose****/
+  color: #b0b3b8;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.profile-con {
+  width: 360px;
+  height: 149px;
+  overflow: hidden;
+  background-color: #242526;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  overflow-x: hidden;
+  position: absolute;
+  top: 54px;
+  right: 20px;
+  z-index: 100;
+  /* display: none; */
+  border: 1px solid grey;
+}
+
+.profile-con--author-con {
+  margin-top: 15px;
+  display: flex;
+  position: relative;
+  width: 95%;
+  height: 70px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.profile-con--author-con:hover {
+  cursor: pointer;
+  background-color: #4d4f50;
+}
+
+.profile-con--author-con--img {
+  margin-left: 15px;
+  margin-top: 3px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.profile-con--author-con--img--caption {
+  color: #e4e6eb;
+  font-size: 18px;
+  font-family: "Game of Squids";
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.profile-con--author-con--img--caption--see {
+  font-size: 13px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  margin-top: 18px;
+  color: #b0b3b8;
+  margin-top: 42px;
+  margin-left: -61px;
+}
+
+.profile-con--author-con--img--caption--see--divider {
+  background-color: rgba(128, 128, 128, 0.4);
+  height: 1px;
+  width: 90%;
+  z-index: 1000;
+  margin-top: 10px;
+  margin-left: 13px;
+}
+
+.profile-con--feed-me-con {
+  display: flex;
+  width: 95%;
+  height: 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.profile-con--feed-me-con:hover {
+  cursor: pointer;
+  background-color: #4d4f50;
+}
+
+.profile-con--feed-me-con--circle {
+  margin-top: 6px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #3a3b3c;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.profile-con--feed-me-con--circle--icon {
+  -webkit-filter: invert(89%) sepia(6%) hue-rotate(185deg);
+}
+
+.profile-con--feed-me-con--circle--icon--heading {
+  margin-top: 7px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #e4e6eb;
+  margin-left: 10px;
+}
+
+.profile-con--feed-me-con--circle--icon--description {
+  font-size: 13px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  color: #b0b3b8;
+  margin-top: 22px;
+  margin-left: -90px;
+}
+
+.profile-con--feed-me-con--divider {
+  background-color: rgba(128, 128, 128, 0.4);
+  height: 1px;
+  width: 90%;
+  z-index: 1000;
+  margin-top: 5px;
+  margin-left: 13px;
+}
+
+.profile-con--other-con {
+  display: flex;
+  width: 95%;
+  height: 45px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.profile-con--other-con:hover {
+  cursor: pointer;
+  background-color: #4d4f50;
+}
+
+.profile-con--other-con--circle {
+  margin-top: 6px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #3a3b3c;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.profile-con--other-con--circle--icon {
+  -webkit-filter: invert(89%) sepia(6%) hue-rotate(185deg);
+}
+
+.profile-con--other-con--circle--icon--heading {
+  margin-top: 12px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #e4e6eb;
+  margin-left: 10px;
+}
+
+.vis {
+  visibility: hidden;
+}
+
+.postCOn {
+  width: 500px;
+  height: 510px;
+  background: #3a3b3c;
+  border-radius: 8px;
+  position: absolute;
+  top: 20%;
+}
+.previIMg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.txtxtx {
+  color: #fff;
+  font-size: 17px;
+  padding-top: 10px;
+}
+
+.postCOn__header {
+  /*   border:2px solid red; */
+  top: 2%;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.postCOn__header__crossCircle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  left: 89%;
+  top: 10%;
+  position: absolute;
+}
+
+.postCOn__header__crossCircle:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.3);
+}
+.icon {
+  filter: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg)
+    brightness(90%) contrast(96%);
+}
+
+.txtPOSY {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  padding: 0%;
+}
+.divider {
+  margin-top: 10px;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.4);
+}
+.mainPOST {
+  margin-top: 5px;
+  width: 100%;
+  height: 305px;
+  /*   border:2px solid green; */
+}
+
+.user_area {
+  display: flex;
+  /*   border:2px solid green; */
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.user_area_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user_area_img_txt {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 10px;
+  margin-top: 11px;
+}
+
+.textArea {
+  background: transparent;
+  outline: none;
+  border: none;
+  /*   border:1px solid red; */
+  width: 96%;
+  padding-bottom: 150px;
+  padding-top: 15px;
+  padding-left: 15px;
+  font-size: 24px;
+  color: #fff;
+}
+.textArea::placeholder {
+  font-size: 24px;
+}
+
+.addpost {
+  width: 100%;
+  height: 45px;
+  /* border: 2px solid green; */
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+  position: absolute;
+}
+
+.txtT {
+  font-size: 20px;
+  color: #fff;
+  /*   margin-top:10px; */
+  margin-left: 15px;
+}
+
+.img {
+  margin-left: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+.img::hover {
+  cursor: pointer;
+}
+
+.postR {
+  width: 468px;
+  height: 36px;
+  background: #2374e1;
+  margin-left: 15px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 82px;
+}
+
+.profileBox {
+  width: 100%;
+  height: 165px;
+  /* border: 2px solid green; */
+  background: #242526;
+}
+
+.profileBoxImgCon {
+  height: 170px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+
+.profileBoxImg {
+  margin-left: 50px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.profileBoxtxt {
+  margin-top: -35px;
+  color: #fff;
+  margin-left: 20px;
+  font-size: 26px;
+}
+
+.mainPROFI {
+  display: flex;
+  width: 100%;
+  height: 530px;
+  border: 2px solid grey;
+}
+
+.mainPROFIPost {
+  width: 100%;
+  height: 100%; 
+  /* border: 2px solid red; */
+   overflow-y: scroll;
+  overflow-x: hidden;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  /* width: 101%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 239px;
+  margin-bottom: 10%; */
+
+}
+
+.showMEy{
+  position: absolute;
+    right: 3%;
+    top: 45%;
+    border: none;
+    outline: none;
+    width: 236px;
+    height: 38px;
+    background: #3A3B3C;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.mainPROFIIntro {
+  width: 50%;
+  height: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.intro {
+  width: 100%;
+  height: 30%;
+  /* background: lime; */
+  border-radius: 10px;
+  background: #242526;
+}
+
+.IntroTxt {
+  color: #fff;
+  font-weight: bold;
+  margin: 15px;
+  font-size: 20px;
+}
+
+.BTN_Intro {
+  margin-top: 15px;
+  width: 88%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #3a3b3c;
+  color: #fff;
+  outline: none;
+  border: none;
+  margin-left: 15px;
+}
